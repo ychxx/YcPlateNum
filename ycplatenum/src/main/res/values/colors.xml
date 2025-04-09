@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 车牌view 字体颜色 -->
+    <color name="yc_plate_num_text_off">#FF7B7B7B</color>
+    <color name="yc_plate_num_text_on">#FF333333</color>
+    <color name="yc_plate_num_text_gray">#ffefefef</color>
+    <color name="yc_plate_num_text_blue">#FFFFFF</color>
+    <color name="yc_plate_num_text_yellow">#333333</color>
+    <color name="yc_plate_num_text_white">#333333</color>
+    <color name="yc_plate_num_text_black">#FFFFFF</color>
+    <color name="yc_plate_num_text_green">#333333</color>
+    <color name="yc_plate_num_text_yellow_green">#333333</color>
+    <color name="yc_plate_num_text_none">#333333</color>
+    <!-- 车牌view 背景颜色 -->
+    <color name="yc_plate_num_bg_gray">#ff7b7b7b</color>
+    <color name="yc_late_num_bg_blue">#ff005ed9</color>
+    <color name="yc_plate_num_bg_yellow">#FFBE01</color>
+    <color name="yc_plate_num_bg_white">#FFFFFF</color>
+    <color name="yc_plate_num_bg_black">#333333</color>
+    <color name="yc_plate_num_bg_yellow_green_1">#FFBE01</color>
+    <color name="yc_plate_num_bg_yellow_green_2">#44EC65</color>
+    <color name="yc_plate_num_bg_none">#EFEFEF</color>
+
+
+    <!-- 车牌输入框 边框颜色 -->
+    <color name="yc_plate_num_frame_border_blue">#006DFF</color>
+    <color name="yc_plate_num_frame_border_green">#44EC65</color>
+    <color name="yc_plate_num_frame_border_yellow">#FFBE01</color>
+    <color name="yc_plate_num_frame_border_white">#333333</color>
+    <color name="yc_plate_num_frame_border_black">#FF006DFF</color>
+
+    <!-- 车牌输入框 背景颜色 -->
+    <color name="yc_plate_num_frame_bg_blue">#FFDEECFF</color>
+    <color name="yc_plate_num_frame_bg_green">#FFC8F8D2</color>
+    <color name="yc_plate_num_frame_bg_yellow">#FFFFF2CE</color>
+    <color name="yc_plate_num_frame_bg_white">#FFFFFFFF</color>
+    <color name="yc_plate_num_frame_bg_black">#FF333333</color>
+
+    <!-- 车牌输入框 字体颜色 -->
+    <color name="yc_plate_num_frame_text_other">#333333</color>
+    <color name="yc_plate_num_frame_text_black">#FFFFFF</color>
+    <!-- 车牌弹框 整体背景颜色 -->
+    <color name="yc_plate_num_frame_view_bg">#ffced2da</color>
+</resources>

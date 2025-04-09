@@ -1,0 +1,117 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/plateNumGl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <View
+        android:id="@+id/plateNumBgV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/yc_plate_num_bg_ground"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/plateNumLeftBgV"
+        app:layout_constraintEnd_toEndOf="@id/plateNumRightBgV"
+        app:layout_constraintStart_toStartOf="@id/plateNumLeftBgV"
+        app:layout_constraintTop_toTopOf="@id/plateNumLeftBgV" />
+
+    <View
+        android:id="@+id/plateNumLeftBgV"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        app:layout_constraintEnd_toStartOf="@+id/plateNumGl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/yc_plate_num_bg_green_left"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/plateNumRightBgV"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:gravity="center|left"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/plateNumGl"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/yc_plate_num_bg_green_right"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/plateNumLeftTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center|right"
+        android:text=""
+        android:textColor="#00FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/plateNumLeftBgV"
+        app:layout_constraintEnd_toEndOf="@id/plateNumLeftBgV"
+        app:layout_constraintStart_toStartOf="@id/plateNumLeftBgV"
+        app:layout_constraintTop_toTopOf="@id/plateNumLeftBgV"
+        tools:text="闽A"
+        tools:textColor="@color/yc_plate_num_text_green"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/plateNumPointTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="·"
+        android:textColor="#00FFFFFF"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@id/plateNumLeftTv"
+        app:layout_constraintEnd_toStartOf="@id/plateNumRightTv"
+        app:layout_constraintStart_toEndOf="@id/plateNumLeftTv"
+        app:layout_constraintTop_toTopOf="@id/plateNumLeftTv"
+        tools:textColor="@color/yc_plate_num_text_green"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/plateNumRightTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:gravity="center|left"
+        android:text=""
+        android:textColor="#00FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/plateNumRightBgV"
+        app:layout_constraintEnd_toEndOf="@id/plateNumRightBgV"
+        app:layout_constraintStart_toStartOf="@id/plateNumRightBgV"
+        app:layout_constraintTop_toTopOf="@id/plateNumRightBgV"
+        tools:text="D2345"
+        tools:textColor="@color/yc_plate_num_text_green"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/plateNumMidTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#00FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="闽D234512"
+        tools:textColor="@color/yc_plate_num_text_green"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>
