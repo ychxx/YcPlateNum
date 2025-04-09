@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/plateNum0"
+        style="@style/YcPlateNumFrameBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/plateNum1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plateNum1"
+        style="@style/YcPlateNumFrameBtn"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/pointTv"
+        app:layout_constraintStart_toEndOf="@id/plateNum0"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pointTv"
+        android:layout_width="6dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="·"
+        android:textColor="#ffc7c7c7"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/plateNum2"
+        app:layout_constraintStart_toEndOf="@id/plateNum1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plateNum2"
+        style="@style/YcPlateNumFrameBtn"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/plateNum3"
+        app:layout_constraintStart_toEndOf="@id/pointTv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plateNum3"
+        style="@style/YcPlateNumFrameBtn"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/plateNum4"
+        app:layout_constraintStart_toEndOf="@id/plateNum2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plateNum4"
+        style="@style/YcPlateNumFrameBtn"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/plateNum5"
+        app:layout_constraintStart_toEndOf="@id/plateNum3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plateNum5"
+        style="@style/YcPlateNumFrameBtn"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/plateNum6"
+        app:layout_constraintStart_toEndOf="@id/plateNum4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plateNum6"
+        style="@style/YcPlateNumFrameBtn"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/energyBtn"
+        app:layout_constraintStart_toEndOf="@id/plateNum5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/energyBtn"
+        style="@style/YcPlateNumFrameBtn"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/plateNum6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/energyMaskTv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:gravity="center"
+        android:lineHeight="9sp"
+        android:lineSpacingExtra="0dp"
+        android:text="@string/yc_plate_num_energy"
+        android:textColor="#44EC65"
+        android:textSize="11sp"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="@id/energyBtn"
+        app:layout_constraintEnd_toEndOf="@id/energyBtn"
+        app:layout_constraintStart_toStartOf="@id/energyBtn"
+        app:layout_constraintTop_toTopOf="@id/energyBtn"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="YcPlateNumFrameBtnBase">
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/yc_plate_num_frame_un_data</item>
+        <item name="android:textColor">@color/yc_plate_num_frame_text_other</item>
+    </style>
+
+    <style name="YcPlateNumFrameBtn" parent="YcPlateNumFrameBtnBase">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+</resources>

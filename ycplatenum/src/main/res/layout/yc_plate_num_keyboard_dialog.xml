@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffced2da"
+    android:orientation="horizontal"
+    android:paddingHorizontal="4dp"
+    android:paddingVertical="6dp">
+
+    <com.yc.ycplatenum.YcPlateNumFrameView2
+        android:id="@+id/plateNumFrameView"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/plateNumColorRv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plateNumFrameView"
+        tools:itemCount="3"
+        tools:listitem="@layout/yc_plate_num" />
+
+    <Button
+        android:id="@+id/closeBtn"
+        android:layout_width="64dp"
+        android:layout_height="32dp"
+        android:background="@drawable/yc_plate_num_keyboard_bg"
+        android:gravity="center"
+        android:text="关闭"
+        android:textColor="#333333"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="64dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/yc_plate_num_keyboard_bg"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="#333333"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/closeBtn" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/keyboardRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/deleteBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:spanCount="8"
+        tools:itemCount="40"
+        tools:listitem="@layout/yc_plate_num_keyboard_item" />
+</androidx.constraintlayout.widget.ConstraintLayout>
