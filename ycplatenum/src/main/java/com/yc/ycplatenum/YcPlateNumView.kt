@@ -2,6 +2,7 @@ package com.yc.ycplatenum
 
 import android.content.Context
 import android.util.AttributeSet
+import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
@@ -31,10 +32,10 @@ class YcPlateNumView : LinearLayout {
     var mTextSize: Float = 22f
         set(value) {
             field = value
-            mViewBinding.plateNumLeftTv.textSize = value
-            mViewBinding.plateNumPointTv.textSize = value
-            mViewBinding.plateNumMidTv.textSize = value
-            mViewBinding.plateNumRightTv.textSize = value
+            mViewBinding.plateNumLeftTv.setTextSize(TypedValue.COMPLEX_UNIT_PX, value)
+            mViewBinding.plateNumPointTv.setTextSize(TypedValue.COMPLEX_UNIT_PX, value)
+            mViewBinding.plateNumMidTv.setTextSize(TypedValue.COMPLEX_UNIT_PX, value)
+            mViewBinding.plateNumRightTv.setTextSize(TypedValue.COMPLEX_UNIT_PX, value)
         }
 
     protected fun initView(context: Context, attrs: AttributeSet?) {
