@@ -9,6 +9,7 @@
         android:id="@+id/plateNumV"
         android:layout_width="0dp"
         android:layout_height="48dp"
+        app:ycTextSize="21sp"
         android:layout_marginHorizontal="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

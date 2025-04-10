@@ -28,10 +28,22 @@ class YcPlateNumView : LinearLayout {
      */
     var mPlateNum: String = ""
     private lateinit var mViewBinding: YcPlateNumBinding
+    var mTextSize: Float = 22f
+        set(value) {
+            field = value
+            mViewBinding.plateNumLeftTv.textSize = value
+            mViewBinding.plateNumPointTv.textSize = value
+            mViewBinding.plateNumMidTv.textSize = value
+            mViewBinding.plateNumRightTv.textSize = value
+        }
+
     protected fun initView(context: Context, attrs: AttributeSet?) {
         mViewBinding = YcPlateNumBinding.inflate(LayoutInflater.from(context), this, false)
         mViewBinding.updatePlateView()
+        val a = context.obtainStyledAttributes(attrs, R.styleable.YcPlateNumView)
+        mTextSize = a.getDimension(R.styleable.YcPlateNumView_ycTextSize, 22f)
         addView(mViewBinding.root)
+        a.recycle()
     }
 
     protected fun YcPlateNumBinding.updatePlateView() {
