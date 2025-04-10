@@ -2,7 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/plateNumGl"
@@ -14,7 +14,7 @@
     <View
         android:id="@+id/plateNumBgV"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:background="@drawable/yc_plate_num_bg_ground"
         android:elevation="1dp"
         app:layout_constraintBottom_toBottomOf="@id/plateNumLeftBgV"
@@ -25,7 +25,7 @@
     <View
         android:id="@+id/plateNumLeftBgV"
         android:layout_width="0dp"
-        android:layout_height="47dp"
+        android:layout_height="match_parent"
         app:layout_constraintEnd_toStartOf="@+id/plateNumGl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -35,7 +35,7 @@
     <View
         android:id="@+id/plateNumRightBgV"
         android:layout_width="0dp"
-        android:layout_height="47dp"
+        android:layout_height="match_parent"
         android:gravity="center|left"
         android:textColor="#ffffff"
         android:textSize="20sp"
@@ -49,7 +49,7 @@
     <TextView
         android:id="@+id/plateNumLeftTv"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:layout_marginEnd="4dp"
         android:gravity="center|right"
         android:text=""
@@ -81,7 +81,7 @@
     <TextView
         android:id="@+id/plateNumRightTv"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:layout_marginStart="4dp"
         android:gravity="center|left"
         android:text=""
@@ -99,7 +99,7 @@
     <TextView
         android:id="@+id/plateNumMidTv"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:layout_marginStart="4dp"
         android:gravity="center"
         android:text=""
