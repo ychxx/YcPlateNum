@@ -7,7 +7,7 @@
     android:background="#00FFFFFF"
     android:orientation="horizontal">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/plateNum0"
         style="@style/YcPlateNumFrameBtn"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/plateNum1"
         style="@style/YcPlateNumFrameBtn"
         android:layout_marginStart="2dp"
@@ -37,7 +37,7 @@
         app:layout_constraintStart_toEndOf="@id/plateNum1"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/plateNum2"
         style="@style/YcPlateNumFrameBtn"
         android:layout_marginStart="2dp"
@@ -46,7 +46,7 @@
         app:layout_constraintStart_toEndOf="@id/pointTv"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/plateNum3"
         style="@style/YcPlateNumFrameBtn"
         android:layout_marginStart="2dp"
@@ -55,7 +55,7 @@
         app:layout_constraintStart_toEndOf="@id/plateNum2"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/plateNum4"
         style="@style/YcPlateNumFrameBtn"
         android:layout_marginStart="2dp"
@@ -64,7 +64,7 @@
         app:layout_constraintStart_toEndOf="@id/plateNum3"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/plateNum5"
         style="@style/YcPlateNumFrameBtn"
         android:layout_marginStart="2dp"
@@ -73,7 +73,7 @@
         app:layout_constraintStart_toEndOf="@id/plateNum4"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/plateNum6"
         style="@style/YcPlateNumFrameBtn"
         android:layout_marginStart="2dp"
@@ -82,7 +82,7 @@
         app:layout_constraintStart_toEndOf="@id/plateNum5"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/energyBtn"
         style="@style/YcPlateNumFrameBtn"
         android:layout_marginStart="2dp"

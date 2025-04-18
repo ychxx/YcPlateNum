@@ -33,7 +33,7 @@
         app:spanCount="3"
         tools:listitem="@layout/yc_plate_num_color_item2" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/closeBtn"
         android:layout_width="64dp"
         android:layout_height="32dp"
@@ -46,7 +46,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:visibility="visible" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/deleteBtn"
         android:layout_width="64dp"
         android:layout_height="32dp"
