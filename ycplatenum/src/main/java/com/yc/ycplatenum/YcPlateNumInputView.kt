@@ -45,7 +45,7 @@ open class YcPlateNumInputView : YcPlateNumFrameBase {
         mPlateNumBtnList.add(mViewBinding.plateNumFrameInclude.plateNum6)
         mPlateNumBtnList.add(mViewBinding.plateNumFrameInclude.energyBtn)
         mKeyboardAdapter = YcKeyboardAdapter()
-        mKeyboardAdapter.mItemClickCall = {
+        mKeyboardAdapter.mItemClick = {
             addKeyboardDate(it, YcPlateNumData.PLATE_NUM_KEYBOARD_TYPE_DATA)
         }
         mViewBinding.keyboardRv.adapter = mKeyboardAdapter

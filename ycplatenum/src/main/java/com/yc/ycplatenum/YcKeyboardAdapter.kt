@@ -11,7 +11,7 @@ class YcKeyboardAdapter : RecyclerView.Adapter<YcKeyboardAdapter.Holder>() {
     open var mData: MutableList<Char> = mutableListOf()
         protected set
 
-    var mItemClickCall: ((@YcPlateNumData.YcPlateNumColorType String) -> Unit)? = null
+
     fun addAllData(data: List<Char>?, isClear: Boolean = true) {
         if (isClear)
             mData.clear()
